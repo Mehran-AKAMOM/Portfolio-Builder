@@ -1,0 +1,14 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "FGls0J7Wz9ScJqbX1Gc1F"
+uri = "file://artifacts/portfolio/src/assets/hero-bg.png"
+type = "image"
+title = "Abstract deep navy gold atmospheric"
+
+[[generated]]
+id = "M4gGquT5eQROPCNfbXcjW"
+uri = "file://artifacts/portfolio/src/assets/profile-placeholder.png"
+type = "image"
+title = "Professional abstract profile portrait"

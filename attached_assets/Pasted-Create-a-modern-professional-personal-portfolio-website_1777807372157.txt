@@ -1,0 +1,168 @@
+Create a modern, professional personal portfolio website for me.
+
+Website goal:
+I want a clean personal portfolio that shows who I am, my achievements, skills, projects, leadership work, and future goals. The website should look premium, simple, and professional, suitable for university applications, internships, leadership opportunities, and personal branding.
+
+Style:
+- Modern, clean, premium design
+- Dark navy, white, gold, and light blue color theme
+- Smooth animations
+- Mobile responsive
+- Easy to read
+- Professional but youthful
+- High-quality layout with strong spacing
+- Use cards, icons, sections, and clean typography
+
+Website pages/sections:
+
+1. Hero Section
+Create a strong opening section with:
+- My name: [Your Name]
+- Title: Student Leader | Aspiring Finance & Business Professional | Community Impact Builder
+- Short intro:
+  “I am a driven student passionate about leadership, finance, entrepreneurship, community service, and creating meaningful impact through action.”
+- Buttons:
+  “View My Work”
+  “Contact Me”
+  “Download Resume”
+
+2. About Me
+Write a professional personal introduction:
+- I am an ambitious student focused on academic excellence, leadership, business, finance, and community impact.
+- I enjoy building projects, organizing initiatives, leading teams, and solving real-world problems.
+- My long-term goal is to become a strong leader in business, finance, and entrepreneurship while contributing positively to my community.
+
+Add space for:
+- Profile photo
+- Location
+- School
+- Interests
+
+3. Education
+Create a clean timeline section:
+- School: [Your School Name]
+- Programme: IB Diploma Programme
+- Subjects: Economics, Mathematics, Physics, English, French, Global Politics
+- Academic goal: High academic performance and university preparation
+
+4. Leadership & Experience
+Create cards for leadership roles:
+- CAS / Community Project Leader
+- Finance Manager
+- Event Organizer
+- Student Initiative Member
+- Sports Team Member / Defender
+- Investment Club Member or Leader
+
+Each card should include:
+- Role title
+- Short description
+- Skills developed
+
+5. Projects
+Create a project showcase section with cards:
+
+Project 1: EarthPulse
+Description:
+A youth-led sustainability project focused on waste management, composting, biofuel ideas, and community environmental awareness.
+Skills: Finance, budgeting, sustainability, teamwork, project planning.
+
+Project 2: Zawadi Bazaar
+Description:
+A fundraising and entrepreneurship project where I helped manage products, pricing, sales, and finances.
+Skills: Sales, business planning, customer service, finance.
+
+Project 3: Investment Club
+Description:
+A student-led initiative focused on learning investing, financial literacy, stock markets, crypto, and long-term wealth building.
+Skills: Research, presentation, finance, analysis.
+
+Project 4: Community Service / WAP Support
+Description:
+Supporting women empowerment, skill development, event planning, and community programs.
+Skills: Leadership, organization, communication, impact planning.
+
+6. Skills
+Create a skills section divided into categories:
+
+Leadership Skills:
+- Teamwork
+- Communication
+- Event planning
+- Problem solving
+- Public speaking
+- Responsibility
+
+Business & Finance Skills:
+- Budgeting
+- Investment research
+- Sales
+- Financial tracking
+- Entrepreneurship
+- Market analysis
+
+Technical Skills:
+- Google Sheets
+- Canva
+- AI tools
+- Presentation design
+- Basic website planning
+- Research
+
+Personal Strengths:
+- Discipline
+- Ambition
+- Consistency
+- Hard work
+- Strategic thinking
+- Adaptability
+
+7. Achievements
+Create an achievements section:
+- Led or supported community initiatives
+- Managed budgets and fundraising activities
+- Participated in sports and leadership activities
+- Built strong academic and personal development goals
+- Contributed to sustainability and social impact projects
+
+8. Sports & Personal Development
+Add a section about sports and discipline:
+I am also involved in sports, especially football, where I play as a defender. Sports have helped me develop discipline, resilience, communication, teamwork, and mental toughness.
+
+9. Vision / Future Goals
+Create a strong section:
+My future goals are to study at a top university, build expertise in finance and business, become a strong entrepreneur and investor, and create positive impact in my community and beyond.
+
+10. Resume Section
+Add a section where I can upload or link my CV/resume.
+Button: “Download Resume”
+
+11. Contact Section
+Create a professional contact form with:
+- Name
+- Email
+- Message
+
+Also include:
+- Email: [Your Email]
+- LinkedIn: [Your LinkedIn]
+- Instagram or other social links: [Optional]
+
+12. Footer
+Add:
+- My name
+- Short tagline: “Building discipline, leadership, and impact.”
+- Social media links
+- Copyright text
+
+Extra features:
+- Smooth scrolling
+- Animated counters for achievements
+- Hover effects on project cards
+- Responsive design for phone, tablet, and desktop
+- SEO-friendly structure
+- Fast loading
+- Easy to edit
+- Add placeholder images where needed
+
+Make the website feel like a high-quality student portfolio that can impress universities, mentors, sponsors, and professional contacts.
