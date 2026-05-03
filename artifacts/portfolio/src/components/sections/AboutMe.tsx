@@ -71,7 +71,7 @@ export function AboutMe() {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Location</p>
-                    <p className="font-medium text-foreground">[Your Location]</p>
+                    <p className="font-medium text-foreground">Mombasa, Kenya & Kinshasa, Congo</p>
                   </div>
                 </CardContent>
               </Card>
