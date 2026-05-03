@@ -3,6 +3,11 @@ import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle2, TrendingUp, Trophy, Clock } from "lucide-react";
 
 const ACHIEVEMENTS = [
+  {
+    title: "AKA Medal of Honour — #1 of 90 Students",
+    description: "Awarded the highest academic honour at Aga Khan Academy Mombasa during the IB Middle Years Programme, ranking first in a cohort of 90 students.",
+    icon: <Trophy size={24} className="text-primary-foreground" />
+  },
   { 
     title: "5+ Community Initiatives Led", 
     description: "Successfully planned and executed various community-driven projects with measurable impact.",

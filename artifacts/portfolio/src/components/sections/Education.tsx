@@ -62,7 +62,36 @@ export function Education() {
             </div>
           </motion.div>
 
-          {/* IB Card */}
+          {/* MYP Card */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.08 }}
+            className="relative border-l border-border/50 pl-8 pb-10"
+          >
+            <div className="absolute w-10 h-10 bg-background rounded-full border-2 border-primary/60 -left-5 top-0 flex items-center justify-center">
+              <BookOpen size={18} className="text-primary/70" />
+            </div>
+            <div className="bg-card/70 border border-border p-7 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex flex-wrap items-center gap-3 mb-1">
+                <h3 className="text-xl font-bold text-foreground">Aga Khan Academy — Mombasa</h3>
+                <span className="text-xs font-medium px-2.5 py-1 bg-primary/10 text-primary border border-primary/20 rounded-md">MYP</span>
+              </div>
+              <p className="text-primary/80 font-medium mb-4">IB Middle Years Programme · Mombasa, Kenya</p>
+              <div className="flex flex-wrap gap-3">
+                <div className="flex items-center gap-2.5 bg-primary/10 border border-primary/30 rounded-xl px-4 py-3">
+                  <span className="text-xl">🏅</span>
+                  <div>
+                    <p className="text-sm font-bold text-foreground">AKA Medal of Honour</p>
+                    <p className="text-xs text-muted-foreground">Highest academic award · Ranked #1 of 90 students</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* IB Diploma Card */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -75,7 +104,7 @@ export function Education() {
             </div>
 
             <div className="bg-card border border-border p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-              <h3 className="text-2xl font-bold text-foreground mb-1">Aga Khan Academy</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-1">Aga Khan Academy — Mombasa</h3>
               <p className="text-primary font-medium mb-8">IB Diploma Programme</p>
 
               <h4 className="text-sm font-mono text-muted-foreground uppercase tracking-wider mb-4">Subject Grades</h4>
