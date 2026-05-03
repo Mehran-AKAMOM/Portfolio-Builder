@@ -10,6 +10,7 @@ const NAV_LINKS = [
 
   { name: "Skills", href: "#skills" },
   { name: "Achievements", href: "#achievements" },
+  { name: "Global Reach", href: "#globe" },
   { name: "Gallery", href: "#gallery" },
   { name: "Contact", href: "#contact" },
 ];

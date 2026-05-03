@@ -1,0 +1,49 @@
+Add a new "Global Reach" section to the portfolio, placed between the Achievements and Vision sections. Create it as a new file artifacts/portfolio/src/components/sections/Globe.tsx and add it to Home.tsx.
+
+What to build:
+A sleek, dark interactive 3D globe with glowing animated connection lines between Kenya, India, and Congo. Use the react-globe.gl npm package.
+
+Install:
+npm install react-globe.gl
+
+Globe appearance:
+
+Globe background: transparent (matches site's dark navy #0A0F1E)
+Globe surface: very dark navy (#0D1B2A) with subtle country borders in dim gold (#C9A84C at 20% opacity)
+Atmosphere glow: soft gold/blue haze around the edges
+Auto-rotate slowly and continuously
+User can drag to spin it manually
+
+The 3 points (nodes):
+CityCountryLatLngNairobiKenya-1.2936.82MumbaiIndia19.0772.87KinshasaCongo-4.3215.32
+Each node should be:
+
+A pulsing glowing gold dot (#C9A84C)
+Slightly larger than the globe's surface points
+Labeled with city + country name in small white text floating above it
+
+The connection arcs:
+
+Animated glowing arcs connecting all 3 nodes (Kenya↔India, India↔Congo, Congo↔Kenya)
+Arc color: bright gold-white gradient (#FFD700)
+Arcs animate continuously like light traveling along the path
+Arc altitude: 0.4 (nice visible curve above the globe)
+Stroke width: 2px
+
+
+Section layout:
+
+Section title: "A World of Connections" in the site's serif font (Cormorant Garamond), centered, with gold underline
+Subtitle: "Three continents. One vision." in muted text below
+Globe centered, width 100%, height 500px on desktop, 320px on mobile
+Section has the same dark navy background as the rest of the site
+Fade-in animation using Framer Motion whileInView
+
+
+Code notes:
+
+Use useRef to access the globe instance
+Disable the default white background with backgroundColor="rgba(0,0,0,0)"
+Use arcsData, arcColor, arcAltitude, arcStroke, arcDashLength, arcDashGap, arcDashAnimateTime props for the animated arcs
+Use pointsData, pointColor, pointAltitude, pointRadius, pointLabel for the glowing nodes
+Wrap the globe in a div with overflow: hidden and border-radius: 50% to clip it into a circle shape for a cleaner look
