@@ -98,52 +98,62 @@ export function Projects() {
           className="grid grid-cols-1 md:grid-cols-2 gap-8"
         >
           {PROJECTS.map((project, i) => (
-            <motion.div key={i} variants={item} className="h-full">
-              <Card className="h-full bg-card border-border hover:border-primary/50 transition-all duration-300 overflow-hidden group">
-                <div className={`h-2 w-full bg-gradient-to-r ${project.color}`} />
-                <CardHeader>
-                  <div className="flex items-start justify-between mb-2">
-                    <div className="p-3 bg-primary/10 rounded-xl group-hover:bg-primary/20 transition-colors">
-                      {project.icon}
-                    </div>
-                    <span className="text-xs font-bold px-2.5 py-1 bg-primary/10 text-primary border border-primary/20 rounded-md">
-                      {project.tier}
-                    </span>
-                  </div>
-                  <CardTitle className="text-xl font-bold">{project.title}</CardTitle>
-                  {/* Key stats */}
-                  <div className="flex flex-wrap gap-2 mt-2">
-                    {project.stats.map((stat, j) => (
-                      <span
-                        key={j}
-                        className="text-xs font-semibold px-2.5 py-1 bg-background border border-border rounded-md text-foreground/70"
-                      >
-                        {stat}
+            <motion.div key={i} variants={item} className="h-full" style={{ perspective: 1000 }}>
+              <motion.div whileHover={{ rotateX: 2, rotateY: -2 }} transition={{ duration: 0.3 }}>
+                <Card className="h-full glass-card border-border hover:border-primary/50 transition-all duration-300 overflow-hidden group flex flex-col">
+                  <div className={`h-2 w-full bg-gradient-to-r ${project.color}`} />
+                  <CardHeader>
+                    <div className="flex items-start justify-between mb-2">
+                      <div className="p-3 bg-primary/10 rounded-xl group-hover:bg-primary/20 transition-colors">
+                        {project.icon}
+                      </div>
+                      <span className="text-xs font-bold px-2.5 py-1 bg-primary/10 text-primary border border-primary/20 rounded-md">
+                        {project.tier}
                       </span>
-                    ))}
-                  </div>
-                </CardHeader>
-                <CardContent className="flex flex-col">
-                  <p className="text-muted-foreground mb-6 text-sm leading-relaxed">
-                    {project.description}
-                  </p>
-                  <div className="mt-auto">
-                    <h4 className="text-xs font-mono text-muted-foreground uppercase tracking-wider mb-3">
-                      Core Skills
-                    </h4>
-                    <div className="flex flex-wrap gap-2">
-                      {project.skills.map((skill, j) => (
+                    </div>
+                    <CardTitle className="text-xl font-bold">{project.title}</CardTitle>
+                    {/* Key stats */}
+                    <div className="flex flex-wrap gap-2 mt-2">
+                      {project.stats.map((stat, j) => (
                         <span
                           key={j}
-                          className="text-xs font-medium px-3 py-1.5 bg-background border border-border rounded-md text-foreground/80 group-hover:border-primary/30 transition-colors"
+                          className="text-xs font-semibold px-2.5 py-1 bg-background border border-border rounded-md text-foreground/70"
                         >
-                          {skill}
+                          {stat}
                         </span>
                       ))}
                     </div>
-                  </div>
-                </CardContent>
-              </Card>
+                  </CardHeader>
+                  <CardContent className="flex flex-col flex-1">
+                    <p className="text-muted-foreground mb-6 text-sm leading-relaxed flex-1">
+                      {project.description}
+                    </p>
+                    <div className="mt-auto">
+                      <h4 className="text-xs font-mono text-muted-foreground uppercase tracking-wider mb-3">
+                        Core Skills
+                      </h4>
+                      <div className="flex flex-wrap gap-2 mb-6">
+                        {project.skills.map((skill, j) => (
+                          <span
+                            key={j}
+                            className="text-xs font-medium px-3 py-1.5 bg-background border border-border rounded-md text-foreground/80 group-hover:border-primary/30 transition-colors"
+                          >
+                            {skill}
+                          </span>
+                        ))}
+                      </div>
+                      <div className="flex gap-3 pt-4 border-t border-border/50">
+                        <a href="#" data-testid={`btn-project-details-${i}`} className="text-xs font-medium px-4 py-2 border border-primary text-primary hover:bg-primary hover:text-primary-foreground rounded-md transition-colors">
+                          Details
+                        </a>
+                        <a href="#" data-testid={`btn-project-demo-${i}`} className="text-xs font-medium px-4 py-2 text-muted-foreground hover:text-primary transition-colors">
+                          Live Demo
+                        </a>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
             </motion.div>
           ))}
         </motion.div>

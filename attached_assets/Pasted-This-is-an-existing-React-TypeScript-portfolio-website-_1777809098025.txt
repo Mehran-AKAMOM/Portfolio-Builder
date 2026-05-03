@@ -1,0 +1,68 @@
+This is an existing React + TypeScript portfolio website (Vite + Tailwind + Framer Motion + shadcn/ui). The structure is already built with sections: Hero, About, Education, Experience, Projects, Skills, Achievements, Sports, Vision, Resume, Contact, and Footer. I need you to significantly upgrade the design and content quality. Here's exactly what to improve:
+
+1. Visual Design Overhaul
+
+Replace the current generic dark theme with a richer one: deep navy (#0A0F1E) background, pure white text, gold accent (#C9A84C), and soft blue highlights (#4A90D9)
+Add a subtle animated grain/noise texture overlay on the hero background using CSS
+Make the hero heading bigger and more dramatic — use a serif display font (import Cormorant Garamond from Google Fonts) for headings and keep Inter for body text
+Add a glowing gold underline animation to the name in the Hero section
+Give all section cards a glass-morphism style: background: rgba(255,255,255,0.04), backdrop-filter: blur(10px), gold border on hover
+
+2. Hero Section
+
+Add an animated typing effect that cycles through: "Student Leader", "Finance Enthusiast", "Community Builder", "IB Diploma Candidate"
+Add a subtle floating particle background animation (CSS only, no heavy libraries)
+Make the three CTA buttons more distinct: primary button gold-filled, second outlined in gold, third as ghost text link
+
+3. About Me Section
+
+Add a profile photo placeholder that's a styled circle with initials "MK" and a gold ring border
+Add animated stat counters: "3 IB Higher Levels", "4+ Projects", "2 Years Leadership"
+Display interests as pill/badge chips with icons
+
+4. Projects Section
+
+Make project cards larger and more visual — add a colored gradient banner at the top of each card (different color per project)
+Add a "Live Demo" and "Details" button placeholder on each card
+Add a subtle card tilt effect on hover using CSS transform perspective
+
+5. Skills Section
+
+Replace any plain text lists with animated progress bars or skill tag clouds
+Group skills under four clear headers: Leadership, Business & Finance, Technical, Personal Strengths
+Use gold for filled progress and navy for the bar background
+
+6. Achievements Section
+
+Display each achievement as a timeline with a vertical gold line and circle nodes on the left
+Add a small icon per achievement item
+
+7. Contact Section
+
+Style the form inputs with gold bottom-border focus effect (no full border box, just underline style)
+Add social icon links (LinkedIn, GitHub, Instagram) with hover colour transitions
+
+8. Navbar
+
+Make it sticky with a blur backdrop on scroll (backdrop-filter: blur(12px) + semi-transparent background)
+Add an active section indicator (gold dot or underline) that highlights the current section as the user scrolls
+Add a smooth hamburger menu for mobile
+
+9. Footer
+
+Add a thin gold top border
+Include: Name, tagline "Building discipline, leadership, and impact.", social icons, copyright
+
+10. Animations
+
+All sections should fade + slide up on scroll using Framer Motion's whileInView with viewport={{ once: true }}
+Add staggered children animation on Skills and Projects cards
+Add a scroll progress indicator bar at the very top of the page (thin gold line)
+
+11. Performance & Polish
+
+Ensure full mobile responsiveness — test breakpoints at 375px, 768px, 1280px
+Add <meta> SEO tags in index.html: title, description, og:image placeholder
+Add smooth scroll behavior globally via CSS: html { scroll-behavior: smooth; }
+
+Do not change the existing component file structure. Edit each component file in place. Keep all existing content/copy — only improve the styling, layout, and interactivity.
