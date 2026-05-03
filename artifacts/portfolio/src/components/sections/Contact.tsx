@@ -95,7 +95,7 @@ export function Contact() {
               <div className="pt-8 border-t border-border">
                 <h3 className="text-lg font-bold text-foreground mb-6">Connect</h3>
                 <div className="flex space-x-4">
-                  <a href="#" className="p-3 bg-card border border-border rounded-lg text-foreground hover:bg-primary/10 hover:text-primary transition-colors hover:border-primary/50">
+                  <a href="https://www.linkedin.com/in/mehran-kamani-5b5918335/" target="_blank" rel="noopener noreferrer" className="p-3 bg-card border border-border rounded-lg text-foreground hover:bg-primary/10 hover:text-primary transition-colors hover:border-primary/50">
                     <Linkedin size={20} />
                   </a>
                   <a href="#" className="p-3 bg-card border border-border rounded-lg text-foreground hover:bg-primary/10 hover:text-primary transition-colors hover:border-primary/50">

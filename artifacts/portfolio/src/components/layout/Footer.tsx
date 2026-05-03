@@ -12,7 +12,7 @@ export function Footer() {
         </div>
 
         <div className="flex space-x-6 mb-6 md:mb-0">
-          <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+          <a href="https://www.linkedin.com/in/mehran-kamani-5b5918335/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
             <Linkedin size={20} />
           </a>
           <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
