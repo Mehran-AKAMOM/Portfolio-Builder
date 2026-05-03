@@ -11,6 +11,8 @@ const ROLES = [
     description:
       "Built and ran the school tuckshop as a full student enterprise — managing a 25-person team, supplier relationships, pricing strategy, and operations. Generated 7-figure revenue with 2,000+ orders fulfilled.",
     skills: ["Entrepreneurship", "Operations", "P&L Management", "Team Leadership"],
+    img: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=75",
+    imgAlt: "Business operations and commerce",
   },
   {
     title: "EarthPulse — Finance Executive",
@@ -20,6 +22,8 @@ const ROLES = [
     description:
       "Managed finances for a youth sustainability project, securing a $2,500 IB grant. Connected finance expertise to technical STEM research in biofuel and waste management, driving credible environmental impact.",
     skills: ["Grant Management", "Budgeting", "Sustainability", "STEM Finance"],
+    img: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=600&q=75",
+    imgAlt: "Sustainability and environmental project",
   },
   {
     title: "Investment Club — Founder",
@@ -29,6 +33,8 @@ const ROLES = [
     description:
       "Founded the school Investment Club to build financial literacy among peers. Ran weekly sessions covering stock markets, portfolio strategy, crypto, and economic analysis.",
     skills: ["Financial Analysis", "Public Speaking", "Peer Education", "Research"],
+    img: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&q=75",
+    imgAlt: "Stock market and investing",
   },
   {
     title: "Duke of Edinburgh — Gold Award",
@@ -38,6 +44,8 @@ const ROLES = [
     description:
       "Completed the rigorous Gold DofE programme including a 4-day wilderness expedition and a self-led residential project — demonstrating sustained discipline, maturity, and high-output leadership.",
     skills: ["Resilience", "Discipline", "Leadership", "Community Service"],
+    img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=75",
+    imgAlt: "Wilderness expedition and outdoor leadership",
   },
   {
     title: "Independent Finance Research",
@@ -47,6 +55,8 @@ const ROLES = [
     description:
       "Independently studying financial markets, building models, and developing analytical tools — demonstrating intellectual curiosity that goes beyond classroom requirements and academic box-ticking.",
     skills: ["Financial Modelling", "Data Analysis", "Economics", "Self-Learning"],
+    img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=75",
+    imgAlt: "Data analysis and financial research",
   },
   {
     title: "Football — Open Team Defender",
@@ -56,6 +66,8 @@ const ROLES = [
     description:
       "Played as defender on the school open football team, developing strategic awareness, clear communication under pressure, and the discipline to perform consistently in competitive environments.",
     skills: ["Discipline", "Communication", "Strategy", "Resilience"],
+    img: "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=600&q=75",
+    imgAlt: "Football match in action",
   },
   {
     title: "Marathon & Distance Running",
@@ -65,6 +77,8 @@ const ROLES = [
     description:
       "Completed a half marathon (2:30:00) and a 5K race (24:50), demonstrating the long-term discipline and mental toughness required to train consistently alongside a demanding academic and leadership schedule.",
     skills: ["Mental Toughness", "Goal Setting", "Consistency", "Endurance"],
+    img: "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=600&q=75",
+    imgAlt: "Running a marathon race",
   },
   {
     title: "DP-1 School Play",
@@ -74,6 +88,8 @@ const ROLES = [
     description:
       "Performed in the school's DP-1 production, memorising lines and performing for a live audience. Demonstrates emotional intelligence, public speaking confidence, and the ability to collaborate creatively under pressure.",
     skills: ["Public Speaking", "Emotional Intelligence", "Creativity", "Teamwork"],
+    img: "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?w=600&q=75",
+    imgAlt: "Stage performance and theatre",
   },
 ];
 
@@ -111,16 +127,29 @@ export function Experience() {
         >
           {ROLES.map((role, i) => (
             <motion.div key={i} variants={item}>
-              <Card className="h-full bg-card border-border/50 hover:border-primary/50 transition-all duration-300 group hover:-translate-y-1">
-                <CardHeader className="pb-3">
-                  <div className="flex items-start justify-between mb-3">
-                    <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary/20 transition-colors shrink-0">
-                      {role.icon}
-                    </div>
-                    <span className="text-xs font-bold px-2 py-0.5 bg-primary/10 text-primary border border-primary/20 rounded-md">
-                      {role.tier}
-                    </span>
+              <Card className="h-full bg-card border-border/50 hover:border-primary/50 transition-all duration-300 group hover:-translate-y-1 overflow-hidden">
+
+                {/* Photo banner */}
+                <div className="relative h-36 overflow-hidden">
+                  <img
+                    src={role.img}
+                    alt={role.imgAlt}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                  {/* Dark gradient overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-card via-card/60 to-transparent" />
+                  {/* Tier badge pinned to top-right */}
+                  <span className="absolute top-3 right-3 text-xs font-bold px-2 py-0.5 bg-background/80 backdrop-blur-sm text-primary border border-primary/30 rounded-md">
+                    {role.tier}
+                  </span>
+                  {/* Icon pinned to bottom-left over the gradient */}
+                  <div className="absolute bottom-3 left-4 w-10 h-10 bg-primary/20 backdrop-blur-sm border border-primary/30 rounded-xl flex items-center justify-center group-hover:bg-primary/30 transition-colors">
+                    {role.icon}
                   </div>
+                </div>
+
+                <CardHeader className="pb-3 pt-4">
                   <CardTitle className="text-lg font-bold leading-snug">{role.title}</CardTitle>
                   <div className="flex flex-wrap gap-1.5 mt-2">
                     {role.highlights.map((h, j) => (
@@ -130,6 +159,7 @@ export function Experience() {
                     ))}
                   </div>
                 </CardHeader>
+
                 <CardContent>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                     {role.description}
