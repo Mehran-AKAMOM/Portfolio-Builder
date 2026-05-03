@@ -11,7 +11,6 @@ import { Sports } from "@/components/sections/Sports";
 import { Vision } from "@/components/sections/Vision";
 import { Resume } from "@/components/sections/Resume";
 import { Gallery } from "@/components/sections/Gallery";
-import { Globe } from "@/components/sections/Globe";
 import { Contact } from "@/components/sections/Contact";
 
 export default function Home() {
@@ -25,7 +24,6 @@ export default function Home() {
         <Experience />
         <Skills />
         <Achievements />
-        <Globe />
         <Sports />
         <Vision />
         <Resume />
