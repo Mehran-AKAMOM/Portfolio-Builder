@@ -32,11 +32,22 @@ export function Education() {
               <h3 className="text-2xl font-bold text-foreground mb-2">Aga Khan Academy</h3>
               <p className="text-primary font-medium mb-6">IB Diploma Programme</p>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
-                  <h4 className="text-sm font-mono text-muted-foreground uppercase tracking-wider mb-3">Subjects</h4>
+                  <h4 className="text-sm font-mono text-muted-foreground uppercase tracking-wider mb-3">Higher Level (HL)</h4>
                   <ul className="space-y-2">
-                    {["Economics", "Mathematics", "Physics", "English", "French", "Global Politics"].map((subject, i) => (
+                    {["Economics", "Mathematics AI", "Global Politics"].map((subject, i) => (
+                      <li key={i} className="flex items-center text-foreground/90">
+                        <span className="w-1.5 h-1.5 bg-primary rounded-full mr-3"></span>
+                        {subject}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-sm font-mono text-muted-foreground uppercase tracking-wider mb-3">Standard Level (SL)</h4>
+                  <ul className="space-y-2">
+                    {["English", "French", "ESS"].map((subject, i) => (
                       <li key={i} className="flex items-center text-foreground/90">
                         <span className="w-1.5 h-1.5 bg-secondary rounded-full mr-3"></span>
                         {subject}
