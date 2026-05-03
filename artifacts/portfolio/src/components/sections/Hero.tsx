@@ -29,7 +29,7 @@ export function Hero() {
               Welcome
             </h2>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-foreground mb-6 leading-tight">
-              Hello, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent"> [Your Name] </span>
+              Hello, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent"> Mehran Kamani </span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground font-light mb-8 max-w-2xl leading-relaxed">
               Student Leader | Aspiring Finance & Business Professional | Community Impact Builder

@@ -5,7 +5,7 @@ export function Footer() {
     <footer className="bg-card py-12 border-t border-border">
       <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
         <div className="mb-6 md:mb-0 text-center md:text-left">
-          <p className="text-xl font-serif font-bold text-foreground">[Your Name]</p>
+          <p className="text-xl font-serif font-bold text-foreground">Mehran Kamani</p>
           <p className="text-sm text-muted-foreground mt-2">
             Building discipline, leadership, and impact.
           </p>
@@ -24,7 +24,7 @@ export function Footer() {
         </div>
 
         <div className="text-sm text-muted-foreground text-center md:text-right">
-          &copy; {new Date().getFullYear()} [Your Name]. All rights reserved.
+          &copy; {new Date().getFullYear()} Mehran Kamani. All rights reserved.
         </div>
       </div>
     </footer>

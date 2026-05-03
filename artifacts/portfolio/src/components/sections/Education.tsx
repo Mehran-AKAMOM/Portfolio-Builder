@@ -29,7 +29,7 @@ export function Education() {
             </div>
             
             <div className="bg-card border border-border p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-              <h3 className="text-2xl font-bold text-foreground mb-2">[Your School Name]</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-2">Aga Khan Academy</h3>
               <p className="text-primary font-medium mb-6">IB Diploma Programme</p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

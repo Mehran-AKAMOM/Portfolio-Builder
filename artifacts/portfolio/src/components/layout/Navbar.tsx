@@ -48,7 +48,7 @@ export function Navbar() {
           onClick={(e) => handleNavClick(e, "#home")}
           className="text-xl font-serif font-bold text-foreground hover:text-primary transition-colors"
         >
-          [Your Name]
+          Mehran Kamani
         </a>
 
         {/* Desktop Nav */}

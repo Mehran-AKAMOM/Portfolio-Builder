@@ -4,6 +4,12 @@ import { Briefcase, Users, TrendingUp, Presentation, Shield, Trophy } from "luci
 
 const ROLES = [
   {
+    title: "Tuckshop CEO",
+    icon: <Briefcase size={24} className="text-primary" />,
+    description: "Founded and led the school tuckshop as CEO, overseeing operations, pricing, supplier relations, and team management to run a profitable student-run business.",
+    skills: ["Entrepreneurship", "Operations", "Financial Management"]
+  },
+  {
     title: "CAS / Community Project Leader",
     icon: <Users size={24} className="text-primary" />,
     description: "Spearheaded community initiatives, managing teams and coordinating resources to drive local impact.",

@@ -60,7 +60,7 @@ export function AboutMe() {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Name</p>
-                    <p className="font-medium text-foreground">[Your Name]</p>
+                    <p className="font-medium text-foreground">Mehran Kamani</p>
                   </div>
                 </CardContent>
               </Card>
@@ -82,7 +82,7 @@ export function AboutMe() {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">School</p>
-                    <p className="font-medium text-foreground">[Your School]</p>
+                    <p className="font-medium text-foreground">Aga Khan Academy</p>
                   </div>
                 </CardContent>
               </Card>
