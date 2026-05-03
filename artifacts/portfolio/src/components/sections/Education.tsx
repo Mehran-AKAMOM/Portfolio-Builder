@@ -11,11 +11,15 @@ const IB_SUBJECTS = [
 ];
 
 const TARGET_UNIS = [
-  "University of Toronto",
-  "University of Edinburgh",
-  "King's College London",
-  "McGill University",
-  "[Add your target]",
+  { name: "London School of Economics", detail: "BSc Finance · UK", flag: "🇬🇧" },
+  { name: "Imperial College London", detail: "Economics, Finance & Data Science · UK", flag: "🇬🇧" },
+  { name: "University of Warwick", detail: "BSc Finance · UK", flag: "🇬🇧" },
+  { name: "University College London", detail: "Statistics, Economics & Finance · UK", flag: "🇬🇧" },
+  { name: "Wharton School, UPenn", detail: "BS Economics · USA", flag: "🇺🇸" },
+  { name: "NYU Stern School of Business", detail: "BSc Business · USA", flag: "🇺🇸" },
+  { name: "University of Toronto (Rotman)", detail: "Rotman Commerce · Canada", flag: "🇨🇦" },
+  { name: "UBC Sauder", detail: "BCom · Canada", flag: "🇨🇦" },
+  { name: "Bocconi University", detail: "Economics & Management · Italy", flag: "🇪🇺" },
 ];
 
 export function Education() {
@@ -129,11 +133,14 @@ export function Education() {
               <p className="text-sm text-muted-foreground mb-4">
                 Targeting top universities with strong programmes in Finance, Business, and Economics.
               </p>
-              <ul className="space-y-2">
+              <ul className="space-y-2.5">
                 {TARGET_UNIS.map((uni, i) => (
-                  <li key={i} className="flex items-center gap-3 text-sm text-foreground/90">
-                    <Target size={14} className="text-primary shrink-0" />
-                    {uni}
+                  <li key={i} className="flex items-start gap-3 text-sm">
+                    <span className="text-base leading-none mt-0.5 shrink-0">{uni.flag}</span>
+                    <div>
+                      <span className="text-foreground/90 font-medium">{uni.name}</span>
+                      <span className="block text-xs text-muted-foreground mt-0.5">{uni.detail}</span>
+                    </div>
                   </li>
                 ))}
               </ul>
