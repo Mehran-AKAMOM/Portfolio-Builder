@@ -37,7 +37,30 @@ export function Education() {
           <div className="h-1 w-20 bg-primary rounded-full"></div>
         </motion.div>
 
-        <div className="max-w-5xl mx-auto space-y-8">
+        <div className="max-w-5xl mx-auto space-y-0">
+
+          {/* American School of Kinshasa */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.05 }}
+            className="relative border-l border-border/50 pl-8 pb-10"
+          >
+            <div className="absolute w-10 h-10 bg-background rounded-full border-2 border-border -left-5 top-0 flex items-center justify-center">
+              <BookOpen size={18} className="text-muted-foreground" />
+            </div>
+            <div className="bg-card/50 border border-border/60 p-7 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex flex-wrap items-center gap-3 mb-1">
+                <h3 className="text-xl font-bold text-foreground">American School of Kinshasa</h3>
+                <span className="text-xs font-medium px-2.5 py-1 bg-secondary/10 text-secondary border border-secondary/20 rounded-md">Grades 6 – 8</span>
+              </div>
+              <p className="text-muted-foreground font-medium mb-2">Middle School · Kinshasa, Congo</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Completed middle school at TASOK, building a strong academic foundation in an international environment that shaped my global perspective and adaptability.
+              </p>
+            </div>
+          </motion.div>
 
           {/* IB Card */}
           <motion.div
@@ -45,7 +68,7 @@ export function Education() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="relative border-l border-border/50 pl-8"
+            className="relative border-l border-border/50 pl-8 pb-10"
           >
             <div className="absolute w-10 h-10 bg-background rounded-full border-2 border-primary -left-5 top-0 flex items-center justify-center">
               <BookOpen size={18} className="text-primary" />

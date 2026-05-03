@@ -10,6 +10,7 @@ import { Achievements } from "@/components/sections/Achievements";
 import { Sports } from "@/components/sections/Sports";
 import { Vision } from "@/components/sections/Vision";
 import { Resume } from "@/components/sections/Resume";
+import { Gallery } from "@/components/sections/Gallery";
 import { Contact } from "@/components/sections/Contact";
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
         <Sports />
         <Vision />
         <Resume />
+        <Gallery />
         <Contact />
       </main>
       <Footer />
