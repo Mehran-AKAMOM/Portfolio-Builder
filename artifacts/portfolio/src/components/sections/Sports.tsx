@@ -1,5 +1,20 @@
 import { motion } from "framer-motion";
-import { ShieldAlert } from "lucide-react";
+import { ShieldAlert, Timer, Trophy } from "lucide-react";
+
+const RACE_STATS = [
+  {
+    icon: <Trophy size={28} className="text-primary" />,
+    label: "Half Marathon",
+    value: "2:30:00",
+    sub: "21.1 km completed"
+  },
+  {
+    icon: <Timer size={28} className="text-primary" />,
+    label: "5K Race",
+    value: "24:50",
+    sub: "Personal best"
+  }
+];
 
 export function Sports() {
   return (
@@ -24,12 +39,32 @@ export function Sports() {
               <div className="h-1 w-20 bg-primary rounded-full mb-8 mx-auto md:mx-0"></div>
               
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Playing as a defender on the football field has fundamentally shaped my approach to leadership and life. It's a role that requires constant vigilance, clear communication, and the ability to anticipate challenges before they materialize.
+                Playing as a defender on the football field has fundamentally shaped my approach to leadership and life. It requires constant vigilance, clear communication, and the ability to anticipate challenges before they materialize.
               </p>
               
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Sports have built my discipline, resilience, and mental toughness. The field is where I learned that teamwork isn't just about scoring goals, but about having your team's back when the pressure is on.
+              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+                Beyond football, I push my limits through long-distance running — completing a half marathon and racing 5Ks. Running has deepened my discipline, mental toughness, and ability to stay composed under pressure.
               </p>
+
+              <div className="grid grid-cols-2 gap-4">
+                {RACE_STATS.map((stat, i) => (
+                  <motion.div
+                    key={i}
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: i * 0.15 }}
+                    className="bg-card border border-border rounded-xl p-5 flex items-start gap-4 hover:border-primary/50 transition-colors"
+                  >
+                    <div className="p-2 bg-primary/10 rounded-lg shrink-0">{stat.icon}</div>
+                    <div>
+                      <p className="text-sm text-muted-foreground mb-1">{stat.label}</p>
+                      <p className="text-2xl font-bold text-foreground font-mono">{stat.value}</p>
+                      <p className="text-xs text-muted-foreground mt-1">{stat.sub}</p>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
             </div>
           </motion.div>
         </div>
